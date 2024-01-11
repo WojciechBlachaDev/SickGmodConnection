@@ -3,6 +3,13 @@ Communication script to receive and send data to SICK. FlexiCPU via GMOD gateway
 Sending is setted to write all avaible data points so please enable all datasets in the gateway configuration.
 Reading is setted to read only Data set 1 ( 50 configurable bytes ).
 
+The communication is in the two topics:
+
+1.Gmod/Write_data - this topic allows you to write data to GMOD. To use it you must from sick_gmod_communication.msg import gmod_in.
+2.Gmod/Data_readed - this topic shares readed data from GMOD. For using it you must from sick_gmod_communication.msg import gmod_out.
+
+All the Data sets and bits are the same as in the gateway.
+
 **REQUIREMENTS**
 1. pyModbusTCP (https://pypi.org/project/pyModbusTCP/#description)
 2. rospy (http://wiki.ros.org/rospy)
