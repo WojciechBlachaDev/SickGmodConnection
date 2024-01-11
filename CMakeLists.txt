@@ -8,15 +8,8 @@ add_compile_options(-std=c++11)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-geometry_msgs
-move_base
-nav_msgs
-roscpp
 rospy
-sensor_msgs
 std_msgs
-tf
-tf2_ros
 message_generation
 )
 
@@ -81,7 +74,6 @@ generate_messages(
   DEPENDENCIES
   #geometry_msgs#   nav_msgs#   sensor_msgs#   std_msgs
   std_msgs
-  geometry_msgs
 )
 
 ################################################
