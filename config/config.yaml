@@ -1,0 +1,4 @@
+ip_address: "192.168.1.11"
+port: 502
+refresh_rate: 30
+connection_timeout: 2
